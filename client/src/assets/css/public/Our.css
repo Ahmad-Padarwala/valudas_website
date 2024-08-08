@@ -1,0 +1,353 @@
+.our_first_page {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#border_bot span {
+  border-bottom: 2px solid;
+}
+.first_service_page h1 {
+  font-size: 32px;
+  margin-top: 25px;
+}
+
+.our_sec_page {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 2rem;
+  margin: 10px 0 0 0px;
+}
+.portfolio {
+  background-color: #eaf3f6;
+  width: 30%;
+  height: 320px;
+  border-radius: 20px;
+  padding: 18px 0px;
+  margin-top: 10px;
+  overflow: auto;
+  margin-left: 10px;
+}
+
+.portfolio::-webkit-scrollbar {
+  display: none;
+}
+
+.port_details {
+  padding-top: 10px;
+}
+
+.custom_details {
+  background-color: #f7f8f7;
+  width: 90%;
+  margin: 0 auto;
+  padding: 16px;
+  border: 1px solid #e2e1e1;
+  border-radius: 10px;
+  overflow-y: auto;
+  transition: max-height 0.4s ease-in-out;
+}
+.custom_details::-webkit-scrollbar {
+  display: none;
+}
+.summary p {
+  font-weight: 600;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+.custom_details summary {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  padding-right: 20px;
+}
+
+.custom_details summary::after {
+  content: "⟩";
+  position: absolute;
+  right: 0;
+  font-size: 17px;
+  margin-right: 10px;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.selected-technology {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  color: #68ab3b;
+}
+
+.selected-technology::after {
+  content: "⟩";
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.custom_details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+.custom_details[open] {
+  max-height: 200px;
+}
+
+.details {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 6px;
+  border-radius: 10px;
+}
+
+.details p {
+  padding: 5px;
+  margin-left: 10px;
+  margin-top: 6px;
+  padding-top: 6px;
+  width: 79%;
+  cursor: pointer;
+}
+
+.details p:hover {
+  color: #68ab3b;
+}
+
+.details i {
+  margin-left: 60px;
+}
+.proud_page {
+  width: 95% !important;
+}
+.proud_page_f {
+  width: 95% !important;
+}
+.proud_img img {
+  width: 100%;
+  height: 230px;
+}
+
+.proud_details h5,
+.weed_details h5 {
+  margin: 7px;
+}
+.proud_details p,
+.weed_details p {
+  font-size: 13px;
+  margin-left: 7px;
+  line-height: 22px;
+  width: 100%;
+}
+
+.Experience_page {
+  margin-top: 100px;
+  padding-top: 70px;
+  background-image: url("../../images/Maskgroup.png");
+  color: #e2e1e1;
+  background-color: #132226;
+  padding-bottom: 50px;
+}
+#proj {
+  color: #eaf3f6;
+}
+#line {
+  border-color: #e2e1e1;
+}
+.experience_boxes_Page {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#fir_box {
+  margin-left: 0;
+}
+.experience_box {
+  text-align: center;
+  width: 20%;
+  margin-left: 30px;
+}
+
+.experience_box h5 {
+  margin: 10px 0;
+}
+.slid {
+  width: 60%;
+  display: flex;
+  column-gap: 1rem;
+  position: relative;
+}
+
+.experience_box span {
+  font-size: 30px;
+}
+.experience_box p {
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 23px;
+}
+
+.sliderContent {
+  min-width: 66.66%;
+  box-sizing: border-box;
+}
+.slick-prev {
+  display: block;
+  background-color: darkgray;
+  color: black;
+  position: absolute;
+  top: 9rem;
+  cursor: pointer;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  z-index: 2;
+}
+.slick-next {
+  display: block;
+  background-color: darkgray;
+  color: black;
+  position: absolute;
+  top: 9rem;
+  cursor: pointer;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  right: 0;
+  z-index: 2;
+}
+
+.slierMain {
+  overflow: hidden;
+  width: 100%;
+}
+.sliderTrack {
+  display: flex;
+  width: 98%;
+  transition: transform 0.5s ease;
+}
+
+@media only screen and (max-width: 769px) {
+  .our_first_page {
+    margin-top: 50px;
+  }
+
+  .our_sec_page {
+    flex-wrap: wrap;
+  }
+  .details p {
+    width: 100%;
+  }
+  .portfolio {
+    width: 45%;
+    margin-top: 30px;
+    height: 350px;
+    padding-bottom: 20px;
+  }
+  .port_details {
+    padding-top: 8px;
+  }
+  .summary p {
+    font-size: 14px;
+  }
+  .summary img {
+    width: 15%;
+    margin-top: 4px;
+    margin-right: 5px;
+  }
+  .proud_page_f {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .proud_page {
+    width: 100%;
+    margin-top: 30px;
+  }
+  #proj {
+    font-size: 11px;
+  }
+
+  #cm {
+    padding-top: 10px;
+  }
+
+  .Experience_page {
+    margin-top: 50px;
+  }
+  .experience_boxes_Page {
+    flex-wrap: wrap;
+  }
+  .experience_box {
+    width: 100%;
+    margin: 0;
+    padding: 10px 15px;
+  }
+  .footer_second_page {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .proud_page {
+    width: 100 !important;
+  }
+  .slid {
+    width: 50%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .sliderContent {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .slierMain {
+    overflow: hidden;
+  }
+
+  .sliderTrack {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .portfolio {
+    margin: 0;
+    width: 100%;
+    margin-top: 30px;
+    height: 350px;
+    padding-bottom: 20px;
+  }
+  .our_sec_page {
+    justify-content: left;
+    padding: 0;
+    margin: 10px 30px;
+  }
+
+  .proud_page {
+    width: 50%;
+  }
+  .details p {
+    width: 89%;
+  }
+  .custom_details {
+    padding: 7px;
+  }
+
+  .experience_boxes_Page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .experience_box {
+    width: 45%;
+    margin: 10px 15px;
+  }
+
+  .slid {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+  }
+}

@@ -1,0 +1,148 @@
+.hero {
+  background-image: url("../../images/Group741.png");
+  height: 550px;
+  width: 100%;
+  background-size: cover;
+  padding: 150px 0 0 0;
+}
+
+.hero_page {
+  text-align: center;
+}
+#empowering {
+  background-color: #d5e9ee1f;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 4px 11px;
+  border-radius: 20px;
+}
+.hero_page h1 {
+  color: white;
+  margin-top: 30px;
+  font-size: 39px;
+}
+
+.hero_page h1 span {
+  border-bottom: 2px solid #52a01f;
+}
+.hero_page p {
+  color: white;
+  font-weight: 300;
+  width: 84%;
+  margin-left: 100px;
+  margin-top: 25px;
+  line-height: 25px;
+}
+.hero_page button {
+  background-color: #52a01f;
+  border: none;
+  font-size: 18px;
+  padding: 10px 25px;
+  color: white;
+  margin-top: 60px;
+  border-radius: 20px;
+}
+
+.hero_second {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  height: auto;
+  width: 83%;
+  left: 50%;
+  right: 50%;
+  top: 34.5rem;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 13px 50px -10px #0a181d26;
+}
+
+.slider {
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  width: 98%;
+}
+
+.slide-track {
+  display: flex;
+  height: 90%;
+  width: calc(180px * 14);
+}
+
+.slide {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: 10%;
+  justify-content: space-evenly;
+}
+
+
+@media only screen and (max-width: 374px) {
+  .hero_second {
+    top: 28.7rem !important;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 420px) {
+  .hero_second {
+    top: 27.6rem !important;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 430px) {
+  .hero_second {
+    top: 26rem !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    padding: 100px 0;
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .hero_second {
+    top: 23rem;
+  }
+  #empowering {
+    font-size: 11px;
+    padding: 5px;
+  }
+  .hero_page {
+    text-align: center;
+  }
+  .hero_page h1 {
+    font-size: 19px;
+    width: 100%;
+    padding: 0 15px 22px 15px;
+    line-height: 27px;
+  }
+  .hero_page p {
+    margin: 0;
+    width: 100%;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 0 15px;
+  }
+  .hero_page button {
+    margin: 15px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 1025px) {
+  .hero_page h1 {
+    font-size: 30px;
+  }
+  .hero_page p {
+    font-size: 16px;
+    margin-left: 78px;
+  }
+  .hero_page button {
+    margin-top: 40px;
+  }
+}
